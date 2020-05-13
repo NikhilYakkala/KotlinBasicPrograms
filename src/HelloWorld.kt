@@ -1,3 +1,7 @@
+@file:JvmName("Hello")
+
+import java.util.*
+
 fun main(args : Array<String>)
 {
     /*println("Hello World")
@@ -123,8 +127,59 @@ fun main(args : Array<String>)
         i++;
     }while (i<=num)*/
 
-    //List & Map
-    
+    //List Example
 
+    //var nums = listOf(1,2,3)
+    /*for(i in nums)
+    {
+        println(i)
+    }*/
+    /*for((index,value) in nums.withIndex())
+    {
+        println("Index$index : Value = $value")
+    }*/
+    //map example
 
+    /*var aliens = TreeMap<String,Int>()
+
+    aliens ["nikhil"]=23
+    aliens ["nikki"]=22
+
+    for((name,age) in aliens)
+    {
+        println("Name : $name & Age : $age")
+    }
+*/
+
+    /*var result = add(4,4)
+
+    var max = max(10,20)
+*/
+    var maximum = max(10,20,30)
+
+    /*println("Sum : $result")
+
+    println("Max : $max")
+*/
+    println("Max : $maximum")
 }
+//functions
+
+/*fun add(a : Int, b : Int) : Int = a+b*/
+
+fun add(a : Int, b : Int) : Int
+{
+    return a+b
+}
+/*
+fun max(a : Int, b : Int) : Int
+{
+    if(a>b)
+        return a
+    else
+       return b
+}*/
+
+/*
+fun max(a : Int, b : Int) : Int = if (a>b) a else b*/
+fun max(a : Int, b : Int,c : Int) : Int = if (a>b&&a>c) a else if(b>c) b else c
