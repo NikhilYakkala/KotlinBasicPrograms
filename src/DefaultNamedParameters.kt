@@ -1,6 +1,6 @@
 fun main(args : Array<String>)
 {
-        val student_Id = 2
+        //val student_Id = 2
         val student_Name = "nikki"
         val student_RollNo = 551
         //default parameters
@@ -12,6 +12,7 @@ fun main(args : Array<String>)
         studentDetails(studentName = student_Name,studentRollNo = student_RollNo) //passing the arguments with name as defined in function.
 }
 // default arguments in function definition id, name and roll_no
+@JvmOverloads
 fun studentDetails(studentId : Int=1,studentName : String="Nikhil",studentRollNo : Int=550)
 {
         println("Student Id : $studentId")

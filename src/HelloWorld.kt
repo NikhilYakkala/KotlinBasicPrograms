@@ -155,22 +155,56 @@ fun main(args : Array<String>)
 
     var max = max(10,20)
 */
-    var maximum = max(10,20,30)
+   // var maximum = max(10,20,30)
 
     /*println("Sum : $result")
 
     println("Max : $max")
 */
-    println("Max : $maximum")
+    //println("Max : $maximum")
+
+    //String to Integer
+
+    /*var str : String = "550"
+
+    var number : Int = str.toInt()
+
+    println(number)
+    */
+    /*var e1 = Employee()
+    e1.skills = "JAVA"
+    e1.show()
+    var e2 = Employee()
+    e2.skills = "SQL"
+    e2.show()
+    var e3 = e1.plus(e2)
+    e3.show()*/
+
+    //infix function Example
+    var math = Math()
+
+   var result = math square 3
+
+    println("The Square of given number is : $result")
 }
+//Extension Function
+/*
+fun Employee.plus(e : Employee):Employee
+{
+    var newEmployee = Employee()
+    newEmployee.skills = this.skills + " " + e.skills
+    return newEmployee
+}
+*/
+
 //functions
 
 /*fun add(a : Int, b : Int) : Int = a+b*/
 
-fun add(a : Int, b : Int) : Int
+/*fun add(a : Int, b : Int) : Int
 {
     return a+b
-}
+}*/
 /*
 fun max(a : Int, b : Int) : Int
 {
@@ -182,4 +216,8 @@ fun max(a : Int, b : Int) : Int
 
 /*
 fun max(a : Int, b : Int) : Int = if (a>b) a else b*/
-fun max(a : Int, b : Int,c : Int) : Int = if (a>b&&a>c) a else if(b>c) b else c
+//fun max(a : Int, b : Int,c : Int) : Int = if (a>b&&a>c) a else if(b>c) b else c
+
+
+
+
